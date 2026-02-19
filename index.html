@@ -2681,7 +2681,7 @@ typingisflat.Metric_TrialSummaries = class Metric_TrialSummaries extends typingi
 		result.options = {
             x: {},
             scales: {
-                x: { type: 'time' },
+                x: { type: 'time', time: { minUnit: 'day' } },
                 y: { display: true, title: { display: true, text: 'Total Time (s)' } },
                 yTrial: { min: 0, max: chartData.cumulativeNumberOfTrials[chartData.cumulativeNumberOfTrials.length-1].y,
                     display: false, title: { display: false } },
