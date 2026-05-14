@@ -2685,14 +2685,14 @@ typingisflat.Metric_TrialSummaries = class Metric_TrialSummaries extends typingi
 		const result = {type: 'line'};
 		result.data = {
 			datasets: [
-				{ label: 'total worst', data: chartData.totalTime_worst, borderWidth: 0.5, pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(0, 64, 255, 0.25)", borderColor: "rgba(0, 64, 255, 0.5)" },
-				{ label: 'total median', data: chartData.totalTime_median, borderWidth: 0.5, pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(127, 64, 127, 0.25)", borderColor: "rgba(127, 64, 127, 0.5)" },
-				{ label: 'total best', data: chartData.totalTime_best, borderWidth: 0.5, pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(255, 64, 0, 0.25)", borderColor: "rgba(255, 64, 100, 0.5)" },
-                { label: 'newrecords', data: chartData.newrecords, stepped: true, borderWidth: 4, pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(255, 159, 64, 0.25)", borderColor: "rgb(255, 159, 64, 0.8)" },
+				{ label: 'total worst', data: chartData.totalTime_worst, borderWidth: 1, backgroundColor: "rgba(54, 162, 235, 0.5)", borderColor: "rgba(54, 162, 235, 0.4)"},
+				{ label: 'total median', data: chartData.totalTime_median, borderWidth: 1, backgroundColor: "rgba(205, 131, 210, 0.5)", borderColor: "rgba(205, 131, 210, 0.4)"},
+				{ label: 'total best', data: chartData.totalTime_best, borderWidth: 1, backgroundColor: "rgba(255, 99, 132, 0.5)", borderColor: "rgba(255, 99, 132, 0.4)" },
+                { label: 'newrecords', data: chartData.newrecords, stepped: true, backgroundColor: "rgba(255, 159, 64, 0.5)", borderColor: "rgb(255, 159, 64)" },
                 { label: 'trials(cumulative)', data: chartData.cumulativeNumberOfTrials, showLine: true, stepped: true, borderWidth: 1, pointRadius: 0, pointBorderWidth: 0, borderColor: 'green', yAxisID: 'yTrial'},
-                { label: 'miss worst', data: chartData.missCount_worst, showLine: true, borderWidth: 0.5, pointStyle: 'rect', pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(64,64,64,0.25)", borderColor: "rgba(64,64,64,0.5)", yAxisID: 'yMiss'},
-                { label: 'miss median', data: chartData.missCount_median, showLine: true, borderWidth: 0.5, pointStyle: 'rect', pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(32,32,32,0.25)", borderColor: "rgba(32,32,32,0.5)", yAxisID: 'yMiss'},
-                { label: 'miss best', data: chartData.missCount_best, showLine: true, borderWidth: 0.5, pointStyle: 'rect', pointRadius: 4, pointBorderWidth: 1, backgroundColor: "rgba(64,64,64,0.25)", borderColor: "rgba(64,64,64,0.5)", yAxisID: 'yMiss'}
+                { label: 'miss worst', data: chartData.missCount_worst, showLine: true, borderWidth: 0.5, pointStyle: 'rect', pointRadius: 3, pointBorderWidth: 0.5, borderColor: "rgba(32,32,32,0.4)", yAxisID: 'yMiss'},
+                { label: 'miss median', data: chartData.missCount_median, showLine: true, borderWidth: 1, pointStyle: 'rect', pointRadius: 3, pointBorderWidth: 1, borderColor: "rgba(32,32,32,0.4)", yAxisID: 'yMiss'},
+                { label: 'miss best', data: chartData.missCount_best, showLine: true, borderWidth: 0.5, pointStyle: 'rect', pointRadius: 3, pointBorderWidth: 0.5, borderColor: "rgba(32,32,32,0.4)", yAxisID: 'yMiss'}
 			]
 		};
 		result.options = {
